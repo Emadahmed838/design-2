@@ -271,6 +271,11 @@ header .container nav .icon i {
     row-gap: 40px;
     column-gap: 40px;
 }
+@media (max-width:767px) {
+    .services .services-content {
+    grid-template-columns: 1fr;
+    }
+}
 .services .services-content .serv {
     display: flex;
 }
@@ -366,12 +371,17 @@ header .container nav .icon i {
     padding-bottom: var(--main-padding);
     padding-top: var(--main-padding);
 }
-.shuffle {
+.portfolio .shuffle {
     margin-bottom: 50px;
 }
 .portfolio .shuffle ul {
     display: flex;
     justify-content: center;
+}
+@media (max-width:767px) {
+.portfolio .shuffle ul {
+    flex-wrap: wrap;
+    }
 }
 .portfolio .shuffle ul a {
     padding: 15px 20px;
@@ -504,6 +514,7 @@ header .container nav .icon i {
 @media (max-width:767px) {
     .about .image {
         margin-left: 0px;
+        margin-right: 0px;
     }
 }
 /* start stats  */
